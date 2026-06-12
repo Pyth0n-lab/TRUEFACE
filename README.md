@@ -5,7 +5,6 @@
 ## 🛠 Технологический стек
 * **Language:** Python
 * **ML/DL Frameworks:** Keras / TensorFlow (используется предобученная нейросетевая модель `.h5`)
-* **GUI Framework:** [Впиши сюда библиотеку интерфейса, например: Tkinter / PyQt / CustomTkinter]
 * **Environment:** PyCharm, Git
 
 ## 🚀 Архитектура проекта
