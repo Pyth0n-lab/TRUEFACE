@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>TrueFace | Тестовый стенд</title>
+    <style>
+        body { background: #0f172a; color: white; font-family: sans-serif; text-align: center; padding: 20px; }
+        .container { max-width: 800px; margin: auto; }
+        .video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
+        .video-card { background: #1e293b; padding: 10px; border-radius: 12px; border: 2px solid #334155; }
+        .video-card.fake { border-color: #ef4444; }
+        .video-card.real { border-color: #22c55e; }
+        h1 { color: #38bdf8; }
+        p { color: #94a3b8; }
+        .badge { display: inline-block; padding: 4px 10px; border-radius: 5px; font-weight: bold; margin-bottom: 10px; }
+        .badge-fake { background: #ef4444; }
+        .badge-real { background: #22c55e; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>TRUEFACE TEST BENCH</h1>
+        <p>Используйте этот экран как цель для камеры детектора</p>
+
+        <div class="video-grid">
+            <div class="video-card fake">
+                <span class="badge badge-fake">TARGET: DEEPFAKE</span>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/cQ54GDm1eL0?mute=1" frameborder="0" allowfullscreen></iframe>
+                <p>Проверка: Том Круз</p>
+            </div>
+
+            <div class="video-card fake">
+                <span class="badge badge-fake">TARGET: DEEPFAKE</span>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/V9YMC_V8u_I?mute=1" frameborder="0" allowfullscreen></iframe>
+                <p>Проверка: Эволюция фейков</p>
+            </div>
+
+            <div class="video-card real">
+                <span class="badge badge-real">TARGET: REAL</span>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/9MoXm3pZ0Yg?mute=1" frameborder="0" allowfullscreen></iframe>
+                <p>Проверка: Обычное интервью</p>
+            </div>
+
+            <div class="video-card real">
+                <span class="badge badge-real">TARGET: REAL</span>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/uS6X_fX_T_I?mute=1" frameborder="0" allowfullscreen></iframe>
+                <p>Проверка: Диктор новостей</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
